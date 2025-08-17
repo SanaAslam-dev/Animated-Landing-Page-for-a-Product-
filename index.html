@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlowFit — Dark Theme Landing (Single File)</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:18px;">
+      <div style="display:flex;align-items:center;gap:18px">
+        <div class="brand">GlowFit</div>
+        <div class="muted" style="font-size:0.9rem">AI Fitness</div>
+      </div>
+
+      <nav class="links" aria-label="Main navigation">
+         <button class="btn-cta" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Features</button>
+         <button class="btn-cta" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Learn</button>
+        <button class="btn-cta" onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">Get Started</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="wrap">
+    <section class="hero">
+      <div class="panel" data-aos="fade-right" data-aos-duration="900">
+        <!-- decorative blobs -->
+        <div class="blob b1" aria-hidden="true"></div>
+        <div class="blob b2" aria-hidden="true"></div>
+        <div class="blob b3" aria-hidden="true"></div>
+
+        <h1>GlowFit: Your AI Fitness Partner</h1>
+        <p class="lead">Workouts, meal plans, and progress tracking — all in one app. Personalized routines that evolve with your progress.</p>
+
+        <div class="cta-row">
+          <button class="btn-cta" id="start"> Get Started </button>
+          <a href="#features" class="btn-ghost" style="display:inline-flex;align-items:center;gap:10px"> Learn More ➜ </a>
+        </div>
+      </div>
+
+      <div class="hero-ill" data-aos="fade-left" data-aos-duration="900" data-aos-delay="120">
+        <div class="imgwrap" style="max-width:520px;">
+          <!--  animated illustration  -->
+          <img src="images/fitness-girl.png" alt="Exercise illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features (overlapping cards) -->
+    <section id="features" style="margin-top:18px">
+      <div class="features" style="max-width:1200px;margin:0 auto;">
+        <div class="card" data-aos="zoom-in" data-aos-delay="80">
+          <div class="icon">🏋️</div>
+          <h3>AI-Powered Workouts</h3>
+          <p>Adaptive routines that change as you progress. Built-in tracking and form tips to keep every rep effective.</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="180">
+          <div class="icon">🥗</div>
+          <h3>Nutrition Plans</h3>
+          <p>Personalized meal suggestions that match goals, preferences and busy schedules — simple to follow and flexible.</p>
+        </div>
+
+        <div class="card" data-aos="zoom-in" data-aos-delay="280">
+          <div class="icon">📊</div>
+          <h3>Progress Analytics</h3>
+          <p>Visualize your improvements with charts, streaks, and milestone badges to stay motivated every step of the way.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  learn (section for scrolling target) -->
+    <section id="learn" style="margin-top:34px;padding:28px 0">
+      <div style="max-width:1000px;margin:0 auto;color:var(--muted)">
+        <h2 data-aos="fade-up">How GlowFit helps you</h2>
+        <p data-aos="fade-up" data-aos-delay="90">
+          Combine the power of AI recommendations with simple daily tasks. Use the Get Started button to sign up and try a free 7-day plan.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 GlowFit • Designed for the assignment — Dark theme with orange accents.
+    </footer>
+  </main>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
